@@ -14,7 +14,9 @@ temperatures = [20 , 30 , 18]
 converter = [ i *9 /5 +32 for i in temperatures]
 print(converter)
 # 5. Crea una lista utilizando comprensiÃ³n con los caracteres de una cadena.
-
+texto = "Ganesha"
+caracteres = [letra for letra in texto]
+print(caracteres)
 # 6. Filtra una lista de palabras y deja solo las que tienen mÃ¡s de 4 letras utilizando comprensiÃ³n.
 palabras = ["Hola","NihaoMa","Klk","Hello","Morning"]
 filtro = [ palabra for palabra in palabras if len(palabra) >= 4]
@@ -25,9 +27,12 @@ def aumentar_en(numero):
 aumento = [aumentar_en(i) for i in llista]
 print(aumento)
 # 8. Crea una lista de booleanos que indique si cada nÃºmero es mayor que 10 utilizando comprensiÃ³n.
-indicacion_Mayor_Diez = [comprobar for comprobar in aumento if comprobar > 10]
+indicacion_Mayor_Diez = [comprobar > 10 for comprobar in aumento ]
 print(indicacion_Mayor_Diez)
 
 # 9. Multiplica solo los nÃºmeros impares por 3 en una lista utilizando comprensiÃ³n.
+multiplicacion = [ multi * 3 for multi in aumento if multi % 3 == 0]
+print(multiplicacion)
 
 # 10. Usa comprensiÃ³n de listas anidada para generar una matriz 3x3 con nÃºmeros del 1 al 9.
+
