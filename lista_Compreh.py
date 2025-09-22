@@ -35,4 +35,12 @@ multiplicacion = [ multi * 3 for multi in aumento if multi % 3 == 0]
 print(multiplicacion)
 
 # 10. Usa comprensiÃ³n de listas anidada para generar una matriz 3x3 con nÃºmeros del 1 al 9.
+ #Repetir tomorrow
 
+matriz_3x3 = [[(j * 3) + i for i in range(1, 4)] for j in range(3)]
+print(matriz_3x3)
+
+
+#for j in range(3) (rows) It makes a new sublist for the matrix (exterior loop)
+#for i in range(1, 4) It makes the elements of each row 1,2,3 ofc . It runs 3 times for the exterior loop (interior loop)
+#(j * 3) + i It make the operation ofc 
