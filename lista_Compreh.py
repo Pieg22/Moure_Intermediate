@@ -44,3 +44,37 @@ print(matriz_3x3)
 #for j in range(3) (rows) It makes a new sublist for the matrix (exterior loop)
 #for i in range(1, 4) It makes the elements of each row 1,2,3 ofc . It runs 3 times for the exterior loop (interior loop)
 #(j * 3) + i It make the operation ofc 
+
+#Write a program that repeatedly prompts a user for integer numbers until the user enters 'done'. 
+
+def repeticion ():
+     grupo_integrales = [] 
+    
+     while True :
+          usuario_habla = input("Write numbers , then say done : ") # User write's
+          if  usuario_habla.lower() == "done" : 
+               break
+          try :
+           numero = int(usuario_habla) 
+           grupo_integrales.append(numero)
+           if numero >= 2 and numero <= 10 :
+               grupo_integrales.append(numero)
+           else:
+               print("The number need to be betwen 2 and 10")
+          except ValueError:
+           print("Invalid Input")   
+     if grupo_integrales :
+         minimo = min(grupo_integrales)
+         maximo = max(grupo_integrales)
+         print(f"{minimo} this is the lower one , and {maximo} is bigger")
+     else : 
+         print("We need numbers!")
+     
+     
+     
+repeticion()
+# Once 'done' is entered, print out the largest and smallest of the numbers.
+# If the user enters anything other than a valid number catch it with a try/except and put out an appropriate message and ignore the number. Enter 7, 2, bob, 10, and 4 and match the output below:
+#Invalid input
+#Maximum is 10
+#Minimum is 2
