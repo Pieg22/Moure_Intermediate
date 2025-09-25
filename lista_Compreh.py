@@ -56,23 +56,25 @@ print(matriz_3x3)
 
 
 grupo_integrales = [] 
-    
+error_encontrado = False  
 while True : #Infinite Bucle Starts
           usuario_habla = input("Write numbers , then say done : ") # User write's
           if  usuario_habla.lower() == "done" : 
                break  #Here if user write done , bucle stops!
           try :   #Here we start to manage the rules of the program ofc
            numero = int(usuario_habla) #Checking If the input is an int or what
-           if numero >= 2 and numero <= 10 :  #Just we want save the numbers below this rules 
-               grupo_integrales.append(numero) #Save the numbers ofc
-           else:
-               print("The number need to be betwen 2 and 10")
+           if 2<= numero <=10:   #Just we want save the numbers below this rules 
+               grupo_integrales.append(numero) #Save the numbers ofc     
+          
           except ValueError:
-           print("Invalid Input")   
+           error_encontrado = True 
 if grupo_integrales :
+        if error_encontrado:
+         print("Invalid Input")
          minimo = min(grupo_integrales)
          maximo = max(grupo_integrales)
-         print(f"{minimo} this is the lower one , and {maximo} is bigger")
+         print(f"Maximum is {maximo} ")
+         print(f"Minimum is {minimo} ")
 else : 
          print("We need numbers!")
      
