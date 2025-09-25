@@ -85,30 +85,4 @@ else :
 
 
 
-"""def repeticion ():
-     grupo_integrales = [] 
-    
-     while True : #Infinite Bucle Starts
-          usuario_habla = input("Write numbers , then say done : ") # User write's
-          if  usuario_habla.lower() == "done" : 
-               break  #Here if user write done , bucle stops!
-          try :   #Here we start to manage the rules of the program ofc
-           numero = int(usuario_habla) 
-           grupo_integrales.append(numero)
-           if numero >= 2 and numero <= 10 :
-               grupo_integrales.append(numero)
-           else:
-               print("The number need to be betwen 2 and 10")
-          except ValueError:
-           print("Invalid Input")   
-     if grupo_integrales :
-         minimo = min(grupo_integrales)
-         maximo = max(grupo_integrales)
-         print(f"{minimo} this is the lower one , and {maximo} is bigger")
-     else : 
-         print("We need numbers!")
-     
-     
-     
-repeticion() """
 
