@@ -12,8 +12,11 @@ print(el_mayor(100,300))
 print(el_mayor(68,11))
 
 # 4. Crea una lambda que sume 10 a un nÃºmero dado.
+otra_suma = lambda k : k +10
+print(otra_suma(10))
 
 # 5. Crea una lambda que devuelva el Ãºltimo carÃ¡cter de una cadena.
+ultimo = lambda 
 
 # 6. Crea una lambda que indique si una palabra tiene mÃ¡s de 6 letras.
 
