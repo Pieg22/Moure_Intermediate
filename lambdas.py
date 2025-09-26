@@ -3,8 +3,13 @@ sumar = lambda primer_numero , segundo_numero : primer_numero + segundo_numero
 print(sumar(100,3000))
 
 # 2. Crea una lambda que calcule el cuadrado de un nÃºmero.
+cuadrado = lambda first_n , second_n : first_n ** second_n
+print(cuadrado(32,10))
 
 # 3. Crea una lambda que devuelva el mayor de dos nÃºmeros.
+el_mayor = lambda w,z : w if w > z else z 
+print(el_mayor(100,300))
+print(el_mayor(68,11))
 
 # 4. Crea una lambda que sume 10 a un nÃºmero dado.
 
