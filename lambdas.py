@@ -44,5 +44,5 @@ empty_string = lambda cadena_empty : "Cadena vacía" if cadena_empty == "" else 
 print(empty_string(""))
 
 # 10. Crea una lambda que calcule el precio final con un impuesto aÃ±adido del 21%.
-final_price = lambda precio, result  : precio if 
+final_price = lambda 
 print(final_price(100)) 
